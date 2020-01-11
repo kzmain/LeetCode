@@ -2,32 +2,6 @@
 #include <iostream>
 #include <algorithm>
 
-
-
-//class Solution {
-//public:
-//
-//
-//    std::vector<std::vector<int>> generate(int numRows) {
-//        auto res_vec = std::vector<std::vector<int>>{};
-//        if(numRows < 1) return res_vec;
-//        res_vec.push_back(std::vector<int>{1});
-//        for(int row = 1; row < numRows; row++){
-//            res_vec.emplace_back();
-//            //@Caution: i < pre_size own't compare
-//            auto pre_size= res_vec[row - 1].size();
-//            std::cout<<"Pre len: "<<pre_size<<std::endl;
-//            int i = -2;
-//            for(; i < pre_size; i++){
-//                std::cout<<"This is a test"<<std::endl;
-//            }
-//            std::cout<<"I val: "<<i<<std::endl;
-//        }
-//
-//        return res_vec;
-//    }
-//};
-
 class Solution {
 public:
 
