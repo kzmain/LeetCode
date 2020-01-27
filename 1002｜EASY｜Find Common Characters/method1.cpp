@@ -52,7 +52,9 @@ public:
 int main() {
     Solution so;
     auto v1 = std::vector<std::string>{"bella","label","roller"};
-    for(auto c : so.commonChars(v1)) std::cout<<c<<" "<<std::endl;
-    std::cout << "Result should be: \"e\",\"l\",\"l\". Result: " << std::endl;
+
+    std::cout << R"(Result should be: "e","l","l". Result: )";
+    for(const auto& c : so.commonChars(v1)) std::cout<<"\""<<c<<"\",";
+    std::cout<<std::endl;
     return 0;
 }
